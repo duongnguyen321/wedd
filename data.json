@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Hôn Lễ: Hiếu & Xương",
+    "description": "Thiệp cưới online của Đỗ Minh Hiếu & Quách Thị Tú Xương. Trân trọng kính mời!"
+  },
+  "names": {
+    "groom": "Đỗ Minh Hiếu",
+    "bride": "Quách Thị Tú Xương",
+    "groomShort": "Hiếu",
+    "brideShort": "Xương"
+  },
+  "date": "2025-12-28T11:00:00",
+  "navigation": [
+    { "label": "Cặp Đôi", "href": "#couple" },
+    { "label": "Sự Kiện", "href": "#event" },
+    { "label": "Chuyện Tình", "href": "#story" },
+    { "label": "Album", "href": "#gallery" },
+    { "label": "Lời Chúc", "href": "#rsvp" }
+  ],
+  "hero": {
+    "greeting": "Save The Date",
+    "date": "28 Tháng 12, 2025",
+    "subTitle": "Chúng mình sắp cưới rồi!",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  },
+  "invitation": {
+    "title": "Lời Mời Trân Trọng",
+    "subTitle": "Hân hạnh được đón tiếp",
+    "guestPlaceholder": "Khách mời quý hóa",
+    "message": "Đến dự buổi tiệc thân mật mừng lễ thành hôn của chúng tôi. Sự hiện diện của quý vị là niềm vinh hạnh lớn lao nhất đối với gia đình chúng tôi.",
+    "timeLabel": "Chủ Nhật",
+    "dateDisplay": "28/12/2025",
+    "timeSubLabel": "11:00 AM",
+    "timeDescription": "Đón khách & Nhập tiệc",
+    "locationTitle": "Trung Tâm Tiệc Cưới Luxury",
+    "locationAddress": "123 Đường Hạnh Phúc, Quận 1, TP.HCM",
+    "mapLink": "#",
+    "mapLabel": "Xem bản đồ",
+    "image": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+  },
+  "couple": {
+    "sectionTitle": "Cô Dâu & Chú Rể",
+    "mainTitle": "Nhân Vật Chính",
+    "groomRole": "Chú Rể",
+    "groomQuote": "Gặp được em là điều may mắn nhất trong cuộc đời anh. Cảm ơn em đã đến và ở lại bên anh.",
+    "groomImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80",
+    "brideRole": "Cô Dâu",
+    "brideQuote": "Em muốn được cùng anh già đi, cùng anh trải qua những ngày bình thường mà hạnh phúc nhất.",
+    "brideImage": "https://images.unsplash.com/photo-1512413914633-b5043f4041ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"
+  },
+  "countdown": {
+    "title": "Cùng đếm ngược ngày hạnh phúc",
+    "days": "Ngày",
+    "hours": "Giờ",
+    "minutes": "Phút",
+    "seconds": "Giây",
+    "quote": "Tình yêu không phải là tìm thấy một người hoàn hảo, mà là học cách nhìn thấy những điều tuyệt vời từ một người chưa hoàn hảo.",
+    "bgImage": "https://images.unsplash.com/photo-1522673607200-1645062cd958?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+  },
+  "story": {
+    "sectionTitle": "Kỷ Niệm Của Chúng Tôi",
+    "mainTitle": "Chuyện Tình Yêu",
+    "items": [
+      {
+        "year": "2020",
+        "title": "Lần Đầu Gặp Gỡ",
+        "description": "Chúng mình tình cờ gặp nhau tại một quán cà phê nhỏ giữa lòng Sài Gòn. Một ánh mắt trao nhau đã định sẵn duyên phận.",
+        "image": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2022",
+        "title": "Lời Yêu Thương",
+        "description": "Sau 2 năm tìm hiểu, Hiếu đã lấy hết can đảm để tỏ tình vào một buổi chiều hoàng hôn đầy lãng mạn.",
+        "image": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "year": "2024",
+        "title": "Cầu Hôn",
+        "description": "Dưới ánh nến lung linh và tiếng nhạc du dương, Hiếu đã quỳ gối trao nhẫn, và Xương đã nói 'Em đồng ý'.",
+        "image": "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "gallery": {
+    "sectionTitle": "Khoảnh Khắc Đẹp",
+    "mainTitle": "Album Hình Cưới",
+    "items": [
+      "https://images.unsplash.com/photo-1519225448526-0a09ad31c710?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1519225448526-0a09ad31c710?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1511285560982-1356c11d4606?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1520854221250-8c1295909a3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    ]
+  },
+  "rsvp": {
+    "sectionTitle": "Gửi Lời Chúc",
+    "mainTitle": "Sổ Lưu Bút & RSVP",
+    "message": "Hãy xác nhận sự hiện diện của bạn và gửi những lời chúc tốt đẹp nhất đến cô dâu & chú rể nhé!",
+    "form": {
+      "successTitle": "Cảm ơn bạn!",
+      "successMessage": "Lời chúc của bạn đã được gửi đi. Hẹn gặp bạn tại đám cưới!",
+      "successButton": "Gửi thêm lời chúc",
+      "nameLabel": "Tên của bạn",
+      "namePlaceholder": "Nhập tên của bạn...",
+      "attendanceLabel": "Bạn sẽ tham dự?",
+      "attendanceOptions": {
+        "yes": "Chắc chắn rồi!",
+        "maybe": "Có thể (Sẽ báo lại sau)",
+        "no": "Tiếc quá, mình bận mất rồi"
+      },
+      "wishLabel": "Lời chúc",
+      "wishPlaceholder": "Viết vài dòng tâm tình cho tụi mình nhé...",
+      "submitButton": "Gửi Xác Nhận",
+      "submitting": "Đang gửi..."
+    },
+    "banking": {
+      "title": "Hộp Mừng Cưới",
+      "message": "Nếu bạn muốn gửi quà mừng từ xa, tụi mình xin nhận tấm lòng của bạn qua đây nhé:",
+      "items": [
+        {
+          "owner": "Đỗ Minh Hiếu",
+          "bank": "Vietcombank",
+          "number": "9999 8888 6666"
+        },
+        {
+          "owner": "Quách Thị Tú Xương",
+          "bank": "Techcombank",
+          "number": "1111 2222 3333"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "thankYou": "Thank you for being part of our journey",
+    "copyright": "© 2025 Wedding Invitation. Designed with ♥"
+  },
+  "audio": "https://cdn.pixabay.com/audio/2022/02/07/audio_13711b7f03.mp3"
+}
