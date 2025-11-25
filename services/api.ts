@@ -6,11 +6,23 @@ const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const STORAGE_KEY = 'wedding_rsvp_data';
 
-// Seed some initial data so the toast system isn't empty on first load
+// Extensive seed data to simulate a populated database
 const SEED_DATA: RSVPData[] = [
-  { name: "Bạn bè chú rể", wish: "Chúc hai bạn trăm năm hạnh phúc!", attendance: "yes", timestamp: 1 },
-  { name: "Người thân", wish: "Sớm sinh quý tử nhé!", attendance: "yes", timestamp: 2 },
-  { name: "Đồng nghiệp", wish: "Mãi mãi bên nhau nhé bro!", attendance: "yes", timestamp: 3 }
+  { name: "Minh & Hằng", wish: "Chúc hai bạn trăm năm hạnh phúc, sớm sinh quý tử nhé! ❤️", attendance: "yes", timestamp: 1 },
+  { name: "Team Dev", wish: "Happy Wedding! Bug-free marriage nhé bro 🐞🚫", attendance: "yes", timestamp: 2 },
+  { name: "Cô Ba", wish: "Mừng hạnh phúc hai cháu. Chúc hai cháu đầu bạc răng long.", attendance: "yes", timestamp: 3 },
+  { name: "Thảo Vy", wish: "Xinh dâu đẹp rể quá chừng! Chúc mừng hạnh phúc nha bạn tôi.", attendance: "yes", timestamp: 4 },
+  { name: "Anh Tuấn", wish: "Chúc mừng ông bạn đã có người rước nhé haha 🤣", attendance: "yes", timestamp: 5 },
+  { name: "Lan Anh", wish: "Chúc Xương mãi xinh đẹp và hạnh phúc bên anh xã nhé 💕", attendance: "yes", timestamp: 6 },
+  { name: "Hội Bạn Cũ C3", wish: "Mãi bên nhau bạn nhé! Hẹn 28/12 quẩy tới bến.", attendance: "yes", timestamp: 7 },
+  { name: "Chú Bảy", wish: "Chúc hai cháu hạnh phúc viên mãn.", attendance: "maybe", timestamp: 8 },
+  { name: "Gia đình bác Hùng", wish: "Chúc mừng gia đình có thêm dâu hiền rể thảo.", attendance: "yes", timestamp: 9 },
+  { name: "Bé Mập", wish: "Em chúc anh chị hạnh phúc ạ! Nhớ chừa phần gà rán cho em nha 🍗", attendance: "yes", timestamp: 10 },
+  { name: "Trần Văn Nam", wish: "Chúc hai bạn những ngày tháng tới đây ngập tràn niềm vui và tiếng cười.", attendance: "yes", timestamp: 11 },
+  { name: "Ngọc Huyền", wish: "So happy for you two! Love you guys ❤️", attendance: "yes", timestamp: 12 },
+  { name: "Đức Thịnh", wish: "Chúc mừng hạnh phúc! Xin lỗi vì không về kịp nhưng quà sẽ bank nha 💸", attendance: "no", timestamp: 13 },
+  { name: "Thu Hà", wish: "Cặp đôi đẹp nhất năm đây rồi! Chúc mừng chúc mừng 🎉", attendance: "yes", timestamp: 14 },
+  { name: "Nhóm Đồng Nghiệp", wish: "Sếp Hiếu cưới vợ rồi, anh em chuẩn bị tinh thần quẩy nào!", attendance: "yes", timestamp: 15 }
 ];
 
 export const weddingService = {
@@ -22,7 +34,7 @@ export const weddingService = {
 
   // Service to post RSVP and Wishes
   submitRSVP: async (entry: Omit<RSVPData, 'timestamp'>): Promise<boolean> => {
-    await delay(1500); // Simulate network processing
+    await delay(1000); // Simulate network processing
 
     try {
       const currentData = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
@@ -43,11 +55,14 @@ export const weddingService = {
 
   // Service to get statistics
   getRSVPStats: async (): Promise<RSVPStats> => {
-    await delay(500);
+    // Get local data
     const stored = localStorage.getItem(STORAGE_KEY);
-    const currentData = stored ? JSON.parse(stored) as RSVPData[] : SEED_DATA;
+    const localData = stored ? JSON.parse(stored) as RSVPData[] : [];
     
-    return currentData.reduce((acc, curr) => {
+    // Merge with seed data for stats
+    const allData = [...SEED_DATA, ...localData];
+    
+    return allData.reduce((acc, curr) => {
       acc.total++;
       if (curr.attendance === 'yes') acc.yes++;
       else if (curr.attendance === 'maybe') acc.maybe++;
@@ -58,16 +73,18 @@ export const weddingService = {
 
   // New service to get list of wishes for Toasts
   getWishes: async (): Promise<RSVPData[]> => {
-    // Return immediately to not block UI
+    // Get local data
     const stored = localStorage.getItem(STORAGE_KEY);
-    let wishes = stored ? JSON.parse(stored) as RSVPData[] : [];
+    const localData = stored ? JSON.parse(stored) as RSVPData[] : [];
     
-    // Merge with seed data if empty just for demo purposes
-    if (wishes.length === 0) {
-      wishes = SEED_DATA;
-    }
+    // Combine seed data and local data to create a "full" list
+    // In a real app, this would fetch from a backend
+    const allWishes = [...SEED_DATA, ...localData];
     
-    // Filter out empty wishes
-    return wishes.filter(w => w.wish && w.wish.trim().length > 0);
+    // Filter out empty wishes and sort by newest (simulated by ID or simply array order)
+    // We shuffle them slightly to make it interesting
+    return allWishes
+      .filter(w => w.wish && w.wish.trim().length > 0)
+      .sort(() => Math.random() - 0.5);
   }
 };
